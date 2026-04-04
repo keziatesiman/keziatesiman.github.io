@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>Kezia Irene - Bioinformatics Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css?v=1.1.0">
+</head>
+
+<body>
+    <div id="app-container">
+
+        <!-- Stage 1: Outer Cell -->
+        <section id="stage-outer" class="stage active">
+            <div class="background-particles"></div>
+            <div class="cell-container">
+                <div class="human-cell" id="outer-cell">
+                    <div class="membrane-glow"></div>
+                    <div class="cell-content">
+                        <h1>Kezia Irene</h1>
+                        <h2>Bioinformatics Data Science Manager</h2>
+                        <h3>@ Kalbe Farma</h3>
+                    </div>
+                </div>
+                <div class="action-container">
+                    <div class="call-to-action">
+                        <span class="pulse-point"></span>
+                        <p>Click Kezia's Cell!</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/kezia-irene98/" target="_blank" rel="noopener noreferrer" class="social-btn"
+                            title="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="http://github.com/keziatesiman/" target="_blank" rel="noopener noreferrer" class="social-btn"
+                            title="GitHub">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                        <a href="https://drive.google.com/drive/folders/1GAC5G-qdla2GJn8a4UeJ04-uegfrrJX9?usp=sharing" target="_blank"
+                            rel="noopener noreferrer" class="social-btn" title="Resume">
+                            <i class="fa-solid fa-file-pdf"></i> Resume
+                        </a>
+                    </div>
+                    </div>
+            </div>
+        </section>
+
+        <!-- Stage 2: Inner Cell / Organelles -->
+        <section id="stage-inner" class="stage hidden">
+            <div class="back-btn" id="back-to-home">← Back to Cover</div>
+            <h2 class="cell-instruction">Welcome to Kezia Irene's interactive portfolio.<br>Click the organelles to
+                explore!</h2>
+            <div class="cytoplasm">
+                <div class="nucleus" id="cell-nucleus">
+                    <div class="nucleolus"></div>
+                    <div class="organelle-bubble">Education</div>
+                </div>
+
+                <!-- Floating Organelles -->
+                <div class="organelle mitochondria m1" id="mito-group">
+                    <div class="organelle-bubble">Publications</div>
+                </div>
+                <div class="organelle mitochondria m2" id="mito-group-2">
+                    <div class="organelle-bubble">Presentations</div>
+                </div>
+
+                <div class="organelle centrioles" id="centriole-group">
+                    <div class="centriole-barrel barrel-1"></div>
+                    <div class="centriole-barrel barrel-2"></div>
+                    <div class="organelle-bubble">Public Talks</div>
+                </div>
+
+                <div class="organelle golgi" id="golgi-group">
+                    <div class="golgi-cisterna cisterna-1"></div>
+                    <div class="golgi-cisterna cisterna-2"></div>
+                    <div class="golgi-cisterna cisterna-3"></div>
+                    <div class="golgi-cisterna cisterna-4"></div>
+                    <div class="organelle-bubble">Leadership Experience</div>
+                </div>
+
+                <div class="organelle-group" id="er-group">
+                    <div class="er-wrapper">
+                        <div class="organelle er">
+                            <div class="er-fold fold-1"></div>
+                            <div class="er-fold fold-2"></div>
+                            <div class="er-fold fold-3"></div>
+                        </div>
+                        <div class="organelle ribosome r1"></div>
+                        <div class="organelle ribosome r2"></div>
+                        <div class="organelle ribosome r3"></div>
+                        <div class="organelle ribosome r4"></div>
+                        <div class="organelle ribosome r5"></div>
+                        <div class="organelle ribosome r6"></div>
+                    </div>
+                    <div class="organelle-bubble">Work and Research Experience</div>
+                </div>
+
+                <div class="organelle vacuole" id="vacuole-group">
+                    <div class="vacuole-fluid"></div>
+                    <div class="organelle-bubble">Projects</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stage 5: Publications -->
+        <section id="stage-pub" class="stage hidden">
+            <div class="powerhouse-bg left">
+                <div class="atp-particle"></div><div class="atp-particle"></div><div class="atp-particle"></div>
+            </div>
+            <div class="powerhouse-bg right">
+                <div class="atp-particle"></div><div class="atp-particle"></div><div class="atp-particle"></div>
+            </div>
+            <div class="back-btn" id="back-to-cell-from-pub">← Back to Cell</div>
+            <div class="pub-container">
+                <h2 class="pub-title">Publications</h2>
+                <a href="https://scholar.google.com/citations?user=7J4ZkZgAAAAJ&hl=en" target="_blank" class="scholar-link">
+                    <i class="fa-brands fa-google"></i> Google Scholar Profile
+                </a>
+                
+                <div class="pub-list" id="pub-list-container">
+                    <!-- Publications will be generated by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Stage 6: Presentations -->
+        <section id="stage-pres" class="stage hidden">
+            <div class="powerhouse-bg left">
+                <div class="atp-particle"></div><div class="atp-particle"></div><div class="atp-particle"></div>
+            </div>
+            <div class="powerhouse-bg right">
+                <div class="atp-particle"></div><div class="atp-particle"></div><div class="atp-particle"></div>
+            </div>
+            <div class="back-btn" id="back-to-cell-from-pres">← Back to Cell</div>
+            <div class="pub-container">
+                <h2 class="pub-title" style="color: #60a5fa; text-shadow: 0 0 20px rgba(96, 165, 250, 0.4);">Presentations & Posters</h2>
+                
+                <div class="pub-list" id="pres-list-container">
+                    <!-- Presentations will be generated by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Stage 7: Public Talks (Centrioles) -->
+        <section id="stage-centriole" class="stage hidden">
+            <div class="microtubules-container">
+                <div class="microtubule mt-1"></div>
+                <div class="microtubule mt-2"></div>
+                <div class="microtubule mt-3"></div>
+                <div class="microtubule mt-4"></div>
+                <div class="microtubule mt-5"></div>
+            </div>
+            <div class="back-btn" id="back-to-cell-from-centriole">← Back to Cell</div>
+            <div class="pub-container">
+                <h2 class="pub-title" style="color: #2dd4bf; text-shadow: 0 0 20px rgba(45, 212, 191, 0.4);">Public Talks & Features</h2>
+                
+                <div class="centriole-grid" id="centriole-list-container">
+                    <!-- Thumbnails will be generated by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Stage 8: Leadership Experience (Golgi) -->
+        <section id="stage-leadership" class="stage hidden">
+            <div class="vesicle-container">
+                <div class="vesicle v-1"></div>
+                <div class="vesicle v-2"></div>
+                <div class="vesicle v-3"></div>
+                <div class="vesicle v-4"></div>
+                <div class="vesicle v-5"></div>
+            </div>
+            <div class="back-btn" id="back-to-cell-from-leadership">← Back to Cell</div>
+            <div class="pub-container">
+                <h2 class="pub-title" style="color: #ec4899; text-shadow: 0 0 20px rgba(236, 72, 153, 0.4);">Leadership Experience</h2>
+                
+                <div class="pub-list" id="leadership-list-container">
+                    <!-- Cards will be generated by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Stage 9: Projects (Vacuole) -->
+        <section id="stage-projects" class="stage hidden">
+            <div class="vesicle-container">
+                <!-- Reusing vesicle animation if needed or custom -->
+            </div>
+            <div class="back-btn" id="back-to-cell-from-projects">← Back to Cell</div>
+            <div class="pub-container" style="max-width: 1200px;">
+                <h2 class="pub-title" style="color: #22d3ee; text-shadow: 0 0 20px rgba(34, 211, 238, 0.4);">Projects</h2>
+                
+                <div class="projects-grid" id="projects-grid-container">
+                    <!-- Categories will be generated by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Stage 4: Work Experience Timeline / previously Education -->
+        <section id="stage-edu" class="stage hidden">
+            <div class="protein-synth-container">
+                <div class="mrna-strand"></div>
+                <div class="ribosome-complex" id="ribosome">
+                    <div class="amino-acid-chain" id="aa-chain"></div>
+                    <div class="ribosome-large"></div>
+                    <div class="ribosome-small"></div>
+                </div>
+            </div>
+            <div class="back-btn" id="back-to-cell-from-edu">← Back to Cell</div>
+            <div class="edu-container">
+                <h2 class="edu-title">Work & Research Experience</h2>
+                <div class="edu-timeline" id="edu-timeline-container">
+                    <!-- Cards will be generated by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Stage 3: DNA Timeline -->
+        <section id="stage-dna" class="stage hidden">
+            <div class="back-btn" id="back-to-nucleus">← Back to Cell</div>
+            <div class="dna-container">
+                <div class="dna-helix" id="dna-helix">
+                    <!-- DNA Base Pairs will be generated by JS -->
+                </div>
+            </div>
+
+            <div class="timeline-container" id="timeline-container">
+                <!-- Timeline items will be generated by JS -->
+            </div>
+        </section>
+
+    </div>
+    <script src="data.js"></script>
+    <script src="script.js?v=1.1.0"></script>
+</body>
+
+</html>
