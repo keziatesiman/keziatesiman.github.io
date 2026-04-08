@@ -49,6 +49,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .stage.active {
@@ -85,8 +86,10 @@ body {
 
 .human-cell {
   position: relative;
-  width: 400px;
-  height: 400px;
+  width: 85vw;
+  height: 85vw;
+  max-width: 400px;
+  max-height: 400px;
   background: var(--cell-color);
   border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
   display: flex;
@@ -303,8 +306,10 @@ body {
 
 .cytoplasm {
   position: relative;
-  width: 600px;
-  height: 600px;
+  width: 90vw;
+  height: 90vw;
+  max-width: 600px;
+  max-height: 600px;
   background: radial-gradient(circle at center, rgba(30, 41, 59, 0.8), rgba(2, 6, 23, 0.9));
   border-radius: 50%;
   box-shadow: inset 0 0 100px rgba(2, 132, 199, 0.3);
@@ -1332,7 +1337,7 @@ body {
 
 .centriole-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 2.5rem;
   width: 100%;
   max-width: 1200px;
@@ -1627,7 +1632,7 @@ body {
 /* Projects Grid */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 2rem;
   width: 100%;
   padding: 2rem 0;
@@ -1745,4 +1750,91 @@ body {
   color: #fff;
   border-left-color: #22d3ee;
   transform: translateX(4px);
+}
+
+/* Media Queries for Cell Responsiveness */
+@media (max-width: 650px), (max-height: 650px) {
+
+  .cell-instruction {
+    font-size: 1.5rem;
+    top: 80px;
+    padding: 0 5rem;
+  }
+  .timeline-card.left, .timeline-card.right {
+    width: 90vw;
+    left: 5%;
+    right: auto;
+    text-align: left;
+  }
+}
+
+@media (max-width: 500px), (max-height: 500px) {
+
+  .cell-instruction {
+    font-size: 1.2rem;
+    top: 70px;
+    padding: 0 5rem;
+  }
+  .organelle-bubble {
+    font-size: 0.95rem;
+    padding: 4px 10px;
+    white-space: normal;
+    text-align: center;
+    max-width: 120px;
+  }
+  .nucleus {
+    width: 130px !important;
+    height: 130px !important;
+  }
+  #er-group {
+    width: 100px !important;
+    height: 100px !important;
+  }
+  .vacuole {
+    width: 70px !important;
+    height: 70px !important;
+  }
+  .golgi {
+    width: 70px !important;
+    height: 55px !important;
+  }
+  .mitochondria {
+    width: 60px !important;
+    height: 30px !important;
+  }
+  .centrioles {
+    width: 50px !important;
+    height: 50px !important;
+  }
+}
+
+@media (max-width: 400px), (max-height: 400px) {
+
+  .cell-instruction {
+    font-size: 1rem;
+    top: 60px;
+    padding: 0 4rem;
+  }
+  .pub-title, .edu-title {
+    font-size: 1.8rem;
+  }
+}
+
+/* Prevent overlap of instruction text and cell on small heights */
+@media (max-height: 700px) {
+  #stage-inner.stage {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 5rem;
+    overflow-y: auto;
+  }
+  #stage-inner .cell-instruction {
+    position: relative;
+    top: auto;
+    margin-bottom: 1.5rem;
+    padding: 0 2rem;
+  }
+  #stage-inner .cytoplasm {
+    flex-shrink: 0; /* Prevent distortion on small heights */
+  }
 }
