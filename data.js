@@ -1,72 +1,77 @@
 const portfolioData = {
   "experiences": [
     {
+      "icon": "💼",
       "year": "Mar 2024 – Present",
       "role": "Bioinformatics Data Science Manager",
       "company": "PT Kalbe Farma Tbk",
       "desc": "<ul style='padding-left: 1rem; margin-top: 0.5rem;'><li>Led Indonesia’s first large-scale Obesity GWAS & PRS, increasing prediction accuracy by 25% (AUC) and discovering 7 novel gene variants specific to the Indonesian population.</li><li style='margin-top: 0.2rem;'>Pioneered ancestry-adjusted PRS, reducing prediction bias by 9% via novel algorithms; results presented at ISCB and 3 other international conferences.</li><li style='margin-top: 0.2rem;'>Standardized genomics workflows using Nextflow & AWS Genomics, achieving 94% imputation quality and enabling scalable, reproducible analysis.</li><li style='margin-top: 0.2rem;'>Secured free access to UK Biobank (valued at £9,500), enabling high-impact population-scale analyses.</li><li style='margin-top: 0.2rem;'>Mentored junior scientists from non-bioinformatics backgrounds to publishing researchers and international presenters, fostering local bioinformatics capacity.</li></ul>"
     },
     {
+      "icon": "🔬",
       "year": "June 2024 – Present (Remote)",
       "role": "Researcher (part time)",
       "company": "MIT Critical Data",
       "desc": "Advisor: Leo Antony Celi, MD, MS, MPH<br><ul style='padding-left: 1rem; margin-top: 0.5rem;'><li>Leading a global research initiative on bias in omics data beyond representativeness, involving 12 researchers from 6 continents.</li><li style='margin-top: 0.2rem;'>Coordinated interdisciplinary collaboration and led iterative design of scoping review strategy on PubMed for publication preparation.</li><li style='margin-top: 0.2rem;'>Currently co-authoring a Springer Nature book chapter on structural bias in omics research, highlighting implications for global health and equity.</li></ul>"
     },
     {
+      "icon": "💼",
       "year": "Jan 2023 – Feb 2024",
       "role": "Data Scientist",
       "company": "Harvard School of Public Health",
       "desc": "National Studies on Air Pollution and Health, Dr. Francesca Dominici Lab<br><ul style='padding-left: 1rem; margin-top: 0.5rem;'><li>Developed Reproducible AI-ML Data Pipeline: utilizing parallel computing to compute raw PM2.5 smoke data from a 10x10 km grid to the zip code level, leading to weighted-distribution rasterization.</li><li style='margin-top: 0.2rem;'>Integrated Healthcare and Environmental Data: integrate Medicare and Medicaid data with temporal pollution and climate change data, ensuring compatibility and reproducibility.</li><li style='margin-top: 0.2rem;'>Contributed to Robust Data Platform: using CWL, Docker, PostgreSQL, and Apache Superset for streamlined processing, efficient transformation, and visualization of exposure and spatial data.</li></ul>"
     },
     {
+      "icon": "💼",
       "year": "June 2023 – Mar 2024",
       "role": "Bioinformatician (Part time)",
       "company": "NalaGenetics Pte Ltd",
       "desc": "<ul style='padding-left: 1rem; margin-top: 0.5rem;'><li>Pioneering Expertise: Spearheaded the utilization of UK Biobank, becoming a pioneer user and expert, focusing on Polygenic Risk Scores.</li><li style='margin-top: 0.2rem;'>Validation and Research: Validated Nalagenetics PRS Model, employing 313 SNPs associated with breast cancer within the UK Biobank's Asian cohort to providing comprehensive breast cancer risk assessments for individuals in Indonesia.</li><li style='margin-top: 0.2rem;'>Educational Leadership: Educated others on diverse applications of UK Biobank, including data access and utilization.</li></ul>"
     },
     {
+      "icon": "🔬",
       "year": "Jan 2022 – Jan 2023",
-      "role": "Computer Center for Neurological Imaging",
-      "company": "Brigham and Women’s Hospital",
+      "role": "Research Trainee",
+      "company": "Brigham and Women’s Hospital, Computer Center for Neurological Imaging",
       "desc": "Advisor: Charles Guttman, MD<br><ul style='padding-left: 1rem; margin-top: 0.5rem;'><li>Research and Analysis: Investigated brain MRI patterns in multiple sclerosis patients using advanced regression and time series analysis.</li><li style='margin-top: 0.2rem;'>Data Anonymization: Developed efficient medical image anonymization pipeline using Python, JavaScript, React, and R for privacy and compliance.</li></ul>"
     },
     {
+      "icon": "💼",
       "year": "May 2022 – Aug 2022",
       "role": "Data Scientist Intern",
       "company": "Stripe, Inc.",
       "desc": "<ul style='padding-left: 1rem; margin-top: 0.5rem;'><li>Developed Predictive Models: Implemented positive unlabeled learning models, enhancing sales effectiveness by ~20% and email targeting accuracy by ~25%.</li><li style='margin-top: 0.2rem;'>Utilized Advanced Tools: JavaScript, Airflow, Spark, Amazon S3, and Python for end-to-end model deployment and scheduling, optimizing workflow efficiency.</li><li style='margin-top: 0.2rem;'>Collaborated for Impact: Worked closely with Sales Analytics team to refine user recommendations.</li></ul>"
     },
     {
+      "icon": "💼",
       "year": "June 2020 – Sep 2021",
       "role": "Business Intelligence Associate",
       "company": "Shopee Pte. Ltd.",
       "desc": "<ul style='padding-left: 1rem; margin-top: 0.5rem;'><li>Drove Seller Growth: Boosted Shopee Live seller numbers by ~110% through personalized stream packages, employing machine learning and cross-functional collaboration.</li><li style='margin-top: 0.2rem;'>Enhanced Data Efficiency: Reduced Shopee Live BI requests by 80% by implementing modular download-boards, intermediary tables, and streamlined push notification processes.</li><li style='margin-top: 0.2rem;'>Delivered Comprehensive Insights: Provided essential operational and analytical data, contributing to a ~150% increase in Shopee Live Academy users.</li></ul>"
     },
     {
+      "icon": "🔬",
       "year": "Jul 2019 — Jun 2020",
-      "role": "Radiology Department",
-      "company": "Cipto Mangunkusumo National Central General Hospital",
+      "role": "Research Assistant",
+      "company": "Cipto Mangunkusumo National Central General Hospital, Radiology Department",
       "desc": "Advisor: dr Reyhan Eddy Yunus, MD, MSc<br><ul style='padding-left: 1rem; margin-top: 0.5rem;'><li>Advanced Medical Imaging: Developed precise 3D deep learning model for intracranial hemorrhage patients, achieving 98% sensitivity and 95.6% specificity in blood segmentation from CT scans.</li><li style='margin-top: 0.2rem;'>Predictive Stroke Analysis: Utilized convolutional neural networks and biomarker data to predict acute ischemic stroke severity, aiding decisions on intravenous r-TPA administration.</li></ul>"
     },
     {
+      "icon": "🔬",
       "year": "Jan 2019 – Jun 2020",
-      "role": "Faculty of Computer Science",
-      "company": "University of Indonesia",
+      "role": "Research Assistant",
+      "company": "University of Indonesia, Faculty of Computer Science",
       "desc": "Advisor: Muhammad Anwar Ma’sum, B.CS, M.CS & Prof. Eng. Wisnu Jatmiko, B.Eng, M.CS<br><ul style='padding-left: 1rem; margin-top: 0.5rem;'><li>Facilitated Cross-Disciplinary Research: Acted as a mediator in a joint research initiative between the faculties of medicine and computer science.</li><li style='margin-top: 0.2rem;'>Developed High-Accuracy Models: Created a blood segmentation model for intracranial hemorrhage patients, achieving 98% sensitivity and 95.6% specificity using deep learning on head CT scans.</li><li style='margin-top: 0.2rem;'>Improved Blood Volume Estimation: Built a blood volume approximation model using regression and support vector machines, resulting in a mean absolute percentage error of 0.18.</li></ul>"
     },
     {
+      "icon": "💼",
       "year": "June 2019 – Aug 2019",
       "role": "Data Science Intern",
       "company": "FAZZ Financial",
       "desc": "<ul style='padding-left: 1rem; margin-top: 0.5rem;'><li>Predicted User Churn: Developed a program to predict churned Payfazz users with 86% accuracy, enhancing targeted marketing strategies.</li><li style='margin-top: 0.2rem;'>Enhanced User Engagement: Created a recommender system with 78% accuracy to deliver personalized coupon suggestions to Payfazz users.</li><li style='margin-top: 0.2rem;'>Streamlined Verification Process: Utilized computer vision to extract text from ID card images, assisting the Payfazz verification team in efficiently validating new users.</li></ul>"
     },
     {
-      "year": "Oct 2018 – Jan 2019",
-      "role": "Faculty of Information Management",
-      "company": "Peking University",
-      "desc": "Advisor: Shijuan Li, BS, MS, Ph.D<br><ul style='padding-left: 1rem; margin-top: 0.5rem;'><li>Evaluated Health IT Impact: Assessed how health information technologies improve patient care in ambulatory settings.</li><li style='margin-top: 0.2rem;'>Conducted In-Depth Reviews: Analyzed 21 research papers to study the correlation between health information technology and ambulatory care.</li><li style='margin-top: 0.2rem;'>Performed Social Network Analysis: Demonstrated changes in patient care post-implementation of health information technologies using social network analysis.</li></ul>"
-    },
-    {
+      "icon": "💼",
       "year": "June 2018 – Aug 2018",
       "role": "Software Engineering Intern",
       "company": "IBM Corp.",

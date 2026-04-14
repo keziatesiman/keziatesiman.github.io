@@ -456,7 +456,7 @@ document.addEventListener('DOMContentLoaded', () => {
       card.style.animationDelay = `${index * 0.2}s`;
 
       card.innerHTML = `
-            <div class="edu-icon" style="font-size: 1.5rem;">💼</div>
+            <div class="edu-icon" style="font-size: 1.5rem;">${exp.icon}</div>
             <div class="edu-content">
                 <div class="edu-year">${exp.year}</div>
                 <div class="edu-degree">${exp.role}</div>
